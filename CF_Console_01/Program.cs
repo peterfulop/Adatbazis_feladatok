@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CF_Console_01.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,10 @@ namespace CF_Console_01
     {
         static void Main(string[] args)
         {
+            var db = new ToDoContext();
+            Console.WriteLine(db.ToDoItems.Count());
+
+            Console.ReadLine();
         }
     }
 }
